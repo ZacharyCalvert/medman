@@ -43,6 +43,10 @@ type MediaFile struct {
 	Tags       []string `yaml:"tags"`
 }
 
+func (rec MediaFile) IsReviewed() bool {
+	return rec.Reviewed != nil && *rec.Reviewed
+}
+
 func (rec MediaFile) GetDate() time.Time {
 	return time.Unix(rec.Earliest/1000, 0)
 }

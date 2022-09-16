@@ -1,11 +1,16 @@
 package main
 
 import (
-	"fmt"
-
 	"github.com/ZacharyCalvert/medman/args"
+	"github.com/ZacharyCalvert/medman/stat"
 )
 
 func main() {
-	fmt.Printf("Hello world will run %s command\n", args.GetCommand())
+	command := args.GetCommand()
+	switch command {
+	case args.Stats:
+		stat.RunCommand()
+	default:
+		panic("Command not implemented")
+	}
 }
