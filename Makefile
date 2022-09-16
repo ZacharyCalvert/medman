@@ -1,7 +1,7 @@
 .PHONY: build test install release
 
 test:
-	go test .
+	go test ./...
 
 install: 
 	go install .
