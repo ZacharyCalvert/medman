@@ -14,7 +14,7 @@ func TestParse(t *testing.T) {
 		t.Errorf("File reading example")
 		return
 	}
-	parsed := make(map[string]MediaRecord)
+	parsed := make(map[string]MediaFile)
 	if err := yaml.Unmarshal(file, parsed); err != nil {
 		t.Errorf("Failed unmarshalling: %v", err)
 	}
@@ -29,7 +29,7 @@ func TestParse(t *testing.T) {
 	ValidateTagged(t, &tagged)
 }
 
-func ValidateIgnored(t *testing.T, rec *MediaRecord) {
+func ValidateIgnored(t *testing.T, rec *MediaFile) {
 	if !*rec.Ignore {
 		t.Errorf("Expected record to be ignored")
 	}
@@ -38,7 +38,7 @@ func ValidateIgnored(t *testing.T, rec *MediaRecord) {
 	}
 }
 
-func ValidateTagged(t *testing.T, rec *MediaRecord) {
+func ValidateTagged(t *testing.T, rec *MediaFile) {
 
 	date := rec.GetDate()
 	if date.Year() != 2011 {

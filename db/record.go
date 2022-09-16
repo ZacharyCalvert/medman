@@ -32,7 +32,7 @@ import "time"
   reviewDone: true
 */
 
-type MediaRecord struct {
+type MediaFile struct {
 	ShaKey     string   `yaml:"sha256"`
 	StoredAt   string   `yaml:"storedAt"`
 	Extensions []string `yaml:"extensions"`
@@ -43,10 +43,10 @@ type MediaRecord struct {
 	Tags       []string `yaml:"tags"`
 }
 
-func (rec MediaRecord) GetDate() time.Time {
+func (rec MediaFile) GetDate() time.Time {
 	return time.Unix(rec.Earliest/1000, 0)
 }
 
-func (rec MediaRecord) IsIgnoredMedia() bool {
+func (rec MediaFile) IsIgnoredMedia() bool {
 	return rec.Reviewed != nil && *rec.Reviewed && rec.Ignore != nil && *rec.Ignore
 }
