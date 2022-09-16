@@ -1,7 +1,11 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+
+	"github.com/ZacharyCalvert/medman/args"
+)
 
 func main() {
-	fmt.Printf("Hello world")
+	fmt.Printf("Hello world will run %s command\n", args.GetCommand())
 }
