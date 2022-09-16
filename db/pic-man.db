@@ -1,0 +1,37 @@
+media:
+    51647685872980723713454343CD5C41CECAF2A479BD29246CD2A758D42D81B9:
+        sha256: 51647685872980723713454343CD5C41CECAF2A479BD29246CD2A758D42D81B9
+        storedAt: ""
+        extensions:
+            - jpg
+            - JPG
+        earliestDate: 1304830800000
+        paths:
+            - /Volumes/Backup_2TB-Alpha/ToProcess7/Zach/2011/103D7000/DSC_0956.JPG
+        ignore: true
+        reviewDone: true
+        tags: []
+    0A2CDC00B3F590984300D922961B2D233E1783032D4C5820C28D5C3A62A78298:
+        sha256: 0A2CDC00B3F590984300D922961B2D233E1783032D4C5820C28D5C3A62A78298
+        storedAt: 0/A/0A2CDC00B3F590984300D922961B2D233E1783032D4C5820C28D5C3A62A78298.JPG
+        extensions:
+            - JPG
+        earliestDate: 1457676000000
+        paths:
+            - /Users/Zach/Pictures/Photos Library.photoslibrary/Masters/2016/12/04/20161204-033647/IMG_0620.JPG
+        tags: []
+    0A3AD799A8F263C53BE90B930D66615A738E870A5086999ECB84013F545E22B5:
+        sha256: 0A3AD799A8F263C53BE90B930D66615A738E870A5086999ECB84013F545E22B5
+        storedAt: 0/A/0A3AD799A8F263C53BE90B930D66615A738E870A5086999ECB84013F545E22B5.JPG
+        extensions:
+            - jpg
+            - JPG
+        earliestDate: 1317445200000
+        paths:
+            - /Volumes/Backup_2TB-Alpha/ToProcess7/Zach/2011/Honeymoon/P1020565.JPG
+        reviewDone: true
+        tags:
+            - people:Zach
+            - places:Royal Caribbean
+            - event:Honeymoon
+updated: 1663184812000
